@@ -1,12 +1,20 @@
-import Todo from "./components/Todo";
+import { Routes, Route } from "react-router-dom";
+import MainHeader from "./components/layout/MainHeader";
+import AllMeetupsPage from "./pages/AllMeetups";
+import NewMeetupsPage from "./pages/NewMeetups";
+import FavsPage from "./pages/Favs";
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>My Todos</h1>
-      <Todo text="Playing guitar" />
-      <Todo text="Playing piano" />
-      <Todo text="Playing drums" />
+      <MainHeader />
+      <div>
+        <Routes>
+          <Route path="/" element={<AllMeetupsPage />} />
+          <Route path="/new-meetup" element={<NewMeetupsPage />} />
+          <Route path="/favs" element={<FavsPage />} />
+        </Routes>
+      </div>
     </div>
   );
 };
