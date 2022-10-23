@@ -1,9 +1,18 @@
-const Modal: React.FC = () => {
+interface closeModalHandler {
+  onCancel: () => void;
+  onConfirm: () => void;
+}
+
+const Modal: React.FC<closeModalHandler> = ({ onCancel, onConfirm }) => {
   return (
     <div className="modal">
       <h1>Are you sure?</h1>
-      <button className="btn btn--alt">Cancel</button>
-      <button className="btn">Confirm</button>
+      <button className="btn btn--alt" onClick={onCancel}>
+        Cancel
+      </button>
+      <button className="btn" onClick={onConfirm}>
+        Confirm
+      </button>
     </div>
   );
 };

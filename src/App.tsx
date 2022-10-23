@@ -1,6 +1,4 @@
 import Todo from "./components/Todo";
-import Modal from "./components/Modal";
-import Backdrop from "./components/Backdrop";
 
 const App: React.FC = () => {
   return (
@@ -9,8 +7,6 @@ const App: React.FC = () => {
       <Todo text="Playing guitar" />
       <Todo text="Playing piano" />
       <Todo text="Playing drums" />
-      <Modal />
-      <Backdrop />
     </div>
   );
 };
