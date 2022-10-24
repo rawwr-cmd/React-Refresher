@@ -1,3 +1,11 @@
+# TechStacks Used
+## React-Router > 6.3.0
+## TypeScript 
+## React
+
+# Deployed Here
+[click1](https://amazing-kelpie-dc3b9e.netlify.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

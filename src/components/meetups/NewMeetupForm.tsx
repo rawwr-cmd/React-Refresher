@@ -38,19 +38,19 @@ const NewMeetupForm: React.FC<NewMeetupFormProps> = ({ onAddMeetup }) => {
     <Card>
       <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.control}>
-          <label htmlFor="title">Meetup Title</label>
+          <label htmlFor="title">Title</label>
           <input type="text" required id="title" ref={titleInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="image">Meetup Image</label>
+          <label htmlFor="image">Unsplash The Url</label>
           <input type="url" required id="image" ref={imageInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="address">Meetup Address</label>
+          <label htmlFor="address">Address</label>
           <input type="text" required id="address" ref={addressInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="description">Meetup Description</label>
+          <label htmlFor="description">Why You Wanna Meet For</label>
           <textarea
             id="description"
             required
