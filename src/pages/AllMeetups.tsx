@@ -8,9 +8,7 @@ const AllMeetupsPage: React.FC = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(
-      "https://react-refresher-90d33-default-rtdb.firebaseio.com/meetups.json"
-    )
+    fetch("https://meetups-9a101-default-rtdb.firebaseio.com/meetups.json")
       .then((response) => response.json())
       .then((data) => {
         const meetups: Meetup[] = [];
