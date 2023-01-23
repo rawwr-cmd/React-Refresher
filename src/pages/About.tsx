@@ -1,9 +1,7 @@
-import React from "react";
-
 export default function About() {
   return (
     <div>
-      <p>About</p>
+      <h1>About</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quasi
         accusantium nesciunt ad possimus dolor itaque quas hic, officia
