@@ -50,7 +50,9 @@ const NewMeetupForm: React.FC<NewMeetupFormProps> = ({ onAddMeetup }) => {
           <input type="text" required id="address" ref={addressInputRef} />
         </div>
         <div className={classes.control}>
-          <label htmlFor="description">Why You Wanna Meet For</label>
+          <label htmlFor="description">
+            Briefly give a description about your event:
+          </label>
           <textarea
             id="description"
             required

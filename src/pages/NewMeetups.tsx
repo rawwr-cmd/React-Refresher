@@ -3,7 +3,7 @@ import NewMeetupForm from "../components/meetups/NewMeetupForm";
 const NewMeetupsPage: React.FC = () => {
   const navigate = useNavigate();
   const addMeetupHandler = (meetupData: {}) => {
-    fetch("https://meetups-9a101-default-rtdb.firebaseio.com/meetups.json", {
+    fetch("https://events-e7c53-default-rtdb.firebaseio.com/meetups.json", {
       method: "POST",
       body: JSON.stringify(meetupData),
       headers: {
@@ -16,7 +16,7 @@ const NewMeetupsPage: React.FC = () => {
 
   return (
     <section>
-      <h1>Add New Meetup</h1>
+      <h1>Add New Event</h1>
       <NewMeetupForm onAddMeetup={addMeetupHandler} />
     </section>
   );

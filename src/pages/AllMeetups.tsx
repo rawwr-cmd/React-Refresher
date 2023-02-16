@@ -8,7 +8,7 @@ const AllMeetupsPage: React.FC = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://meetups-9a101-default-rtdb.firebaseio.com/meetups.json")
+    fetch("https://events-e7c53-default-rtdb.firebaseio.com/meetups.json")
       .then((response) => response.json())
       .then((data) => {
         const meetups: Meetup[] = [];
@@ -30,7 +30,7 @@ const AllMeetupsPage: React.FC = () => {
 
   return (
     <section>
-      <h1>All Meetups</h1>
+      <h1>All Events</h1>
       <MeetUpList meetups={loadedMeetups} />
     </section>
   );

@@ -8,7 +8,7 @@ const MainHeader: React.FC = () => {
 
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>made by rawwr♥</div>
+      <div className={classes.logo}>made by ganesh and team♥</div>
       <nav>
         <ul>
           <li>
@@ -17,15 +17,15 @@ const MainHeader: React.FC = () => {
               to="/"
               end
             >
-              All Meetups
+              All Events
             </NavLink>
           </li>
           <li>
             <NavLink
               className={(navData) => (navData.isActive ? classes.active : "")}
-              to="/new-meetup"
+              to="/new-event"
             >
-              New Meetup
+              New Event
             </NavLink>
           </li>
           <li>

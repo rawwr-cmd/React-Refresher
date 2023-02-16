@@ -9,7 +9,7 @@ const App: React.FC = () => {
     <Layout>
       <Routes>
         <Route path="/" element={<AllMeetupsPage />} />
-        <Route path="/new-meetup" element={<NewMeetupsPage />} />
+        <Route path="/new-event" element={<NewMeetupsPage />} />
         <Route path="/favs" element={<FavsPage />} />
       </Routes>
     </Layout>
